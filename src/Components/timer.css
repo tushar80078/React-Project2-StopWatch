@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ body{
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+.stopwatch-container{
+    background-image: url('../src/background.jpg');
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.stopwatch{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7em;
+    padding-top: 2em;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+button{
+    margin: 10px;
+    width: 6rem;
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    body{
+      font-size: 80%; /* decrease font size for better readability on small screens */
+    }
+    
+    .stopwatch{
+      padding-bottom: 3em; /* reduce padding on the bottom */
+      padding-top: 1em; /* reduce padding on the top */
+    }
+  
+    h1{
+      font-size: 3.5rem; /* reduce font size of h1 */
+    }
+  
+    h2{
+      font-size: 3.5rem; /* reduce font size of h2 */
+    }
+  
+    button{
+      margin: 5px; /* reduce margin of buttons */
+      width: 5rem; /* reduce width of buttons */
+      font-size: 80%; /* decrease font size for better readability on small screens */
+    }
+    
+    .stopwatch-container{
+      height: auto; /* adjust height of container to fit content on small screens */
+    }
+    
+  }
+  
+  
